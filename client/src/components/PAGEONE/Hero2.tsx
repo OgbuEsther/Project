@@ -38,13 +38,14 @@ const Container = styled.div`
     width: 100%;
     height: 400px;
     background-color: #f1f1f1;
-    background-image: url(${pic});
+    /* background-image: url(${pic}); */
+    z-index: 9999;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     position: relative;
     background-attachment: fixed;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 
     ::before{
         content: "";
@@ -53,7 +54,7 @@ const Container = styled.div`
         background-color: rgba(0,0,0,0.5);
         position: absolute;
         top: 0;
-        backdrop-filter: blur(5px);
+        /* backdrop-filter: blur(5px); */
         right: 0;
     }
 `

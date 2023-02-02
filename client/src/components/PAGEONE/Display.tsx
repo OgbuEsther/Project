@@ -24,7 +24,7 @@ const Display : React.FC =() =>{
                         
                     <img src={three} alt="head gear" />
                     </Image>
-                    <Image>
+                    {/* <Image>
                         
                         
                     <img src={three} alt="head gear" />
@@ -38,7 +38,7 @@ const Display : React.FC =() =>{
                         
                         
                     <img src={three} alt="head gear" />
-                    </Image>
+                    </Image> */}
                 </Wrapper>
             </Container>
         </div>
@@ -68,7 +68,7 @@ h1{
 
 const Wrapper = styled.div`
 width: 80%;
-/* height: 500px; */
+height: 500px;
 background-color: #f4f4f4;
 display: flex;
 justify-content: center;
@@ -87,10 +87,12 @@ grid-template-columns: repeat(3 , 1fr);
 `
 
 const Image = styled.div`
-width: 100px;
+width: 300px;
+height: 300px;
 
 img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
